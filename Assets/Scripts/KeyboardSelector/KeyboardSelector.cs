@@ -56,26 +56,32 @@ public class KeyboardSelector<T> where T : ISelectable
 
     private void ScrollToCurrentItem()
     {
+        Canvas.ForceUpdateCanvases();
+
         RectTransform itemRect = _items[_currentIndex].RectTransform;
         RectTransform contentRect = _scrollRect.content;
         RectTransform viewportRect = _scrollRect.viewport;
 
-        float itemTop = -itemRect.anchoredPosition.y;
-        float itemBottom = itemTop + itemRect.rect.height;
-
+        float contentHeight = contentRect.rect.height;
         float viewportHeight = viewportRect.rect.height;
-        float contentOffset = contentRect.anchoredPosition.y;
 
-        float visibleTop = contentOffset;
-        float visibleBottom = contentOffset + viewportHeight;
+        
+        if (contentHeight <= viewportHeight) 
+            return;
 
-        if (itemTop < visibleTop)
-        {
-            contentRect.anchoredPosition = new Vector2(contentRect.anchoredPosition.x, itemTop);
-        }
-        else if (itemBottom > visibleBottom)
-        {
-            contentRect.anchoredPosition = new Vector2(contentRect.anchoredPosition.x, itemBottom - viewportHeight);
-        }
+        float itemPositionY = Mathf.Abs(itemRect.anchoredPosition.y);
+        float itemHeight = itemRect.rect.height;
+
+        
+        float targetPosition = itemPositionY - (viewportHeight / 2) + (itemHeight / 2);
+
+        
+        float maxScroll = contentHeight - viewportHeight;
+        targetPosition = Mathf.Clamp(targetPosition, 0, maxScroll);
+
+        
+        float normalizedPosition = 1f - (targetPosition / maxScroll);
+
+        _scrollRect.verticalNormalizedPosition = normalizedPosition;
     }
 }

@@ -30,6 +30,7 @@ public class DynamicListController : MonoBehaviour
         {
             RatingElementView view = Instantiate(_ratingElementViewPrefab, _elementsContainer);
             view.transform.localScale = Vector3.one;
+            view.Init(data);
             _elements.Add(view);
         }
     }
