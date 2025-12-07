@@ -3,11 +3,15 @@
 
 [▶️ Демо](https://romansharipov.github.io/alternativa_games_build/)
 
-DynamicListController.cs - Создаёт элементы, связывает View с KeyboardSelector, точка входа
-RatingElementView.cs - Отображение одного элемента, хранит состояние (развёрнут/свёрнут)
-HeightAnimator.cs - Анимация высоты через Coroutine
-KeyboardSelector<T> Навигация стрелками, хранит текущий выбранный индекс, автоскролл,можно переиспользовать этот класс в других местах проекта ,или в других проектах
-ISelectable - Интерфейс для элементов списка (SetSelected, RectTransform)
+ - DynamicListController.cs - Создаёт элементы, связывает View с KeyboardSelector, точка входа
+   
+ - RatingElementView.cs - Отображение одного элемента, хранит состояние (развёрнут/свёрнут)
+   
+ - HeightAnimator.cs - Анимация высоты через Coroutine
+   
+ - KeyboardSelector<T> Навигация стрелками, хранит текущий выбранный индекс, автоскролл,можно переиспользовать этот класс в других местах проекта ,или в других проектах
+   
+ - ISelectable - Интерфейс для элементов списка (SetSelected, RectTransform)
 
 - Навигация стрелками ↑↓ и мышью
 - Плавное раскрытие элементов по Enter или клику
