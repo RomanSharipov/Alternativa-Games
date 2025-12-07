@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -10,7 +11,7 @@ public class KeyboardSelector<T> where T : class, ISelectable
 
     public T Current => _items.Count > 0 ? _items[_currentIndex] : default;
     public int CurrentIndex => _currentIndex;
-
+    public event Action<T> OnItemActivated;
     public KeyboardSelector(IReadOnlyList<T> items, ScrollRect scrollRect)
     {
         _items = items;
@@ -50,6 +51,11 @@ public class KeyboardSelector<T> where T : class, ISelectable
         else if (Input.GetKeyDown(KeyCode.UpArrow))
         {
             SelectIndex(_currentIndex - 1);
+        }
+
+        else if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.KeypadEnter))
+        {
+            OnItemActivated?.Invoke(Current);
         }
     }
     

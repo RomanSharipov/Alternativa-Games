@@ -17,6 +17,7 @@ public class DynamicListController : MonoBehaviour
         CreateElements();
         _selector = new KeyboardSelector<RatingElementView>(_elements, _scrollRect);
         _selector.Init();
+        _selector.OnItemActivated += OnItemActivated;
     }
 
     private void Update()
@@ -35,6 +36,10 @@ public class DynamicListController : MonoBehaviour
             _elements.Add(view);
         }
     }
+    private void OnItemActivated(RatingElementView view)
+    {
+        view.Toggle();
+    }
 
     private void OnElementClicked(RatingElementView view)
     {
@@ -47,5 +52,7 @@ public class DynamicListController : MonoBehaviour
         {
             view.OnClicked -= OnElementClicked;
         }
+
+        _selector.OnItemActivated -= OnItemActivated;
     }
 }
