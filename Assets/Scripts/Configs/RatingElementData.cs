@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "DynamicList/RatingElementData", fileName = "RatingElementData")]
+[CreateAssetMenu(menuName = "DynamicListTestTask/RatingElementData", fileName = "RatingElementData")]
 public class RatingElementData : ScriptableObject
 {
     [SerializeField] private string _id;
