@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class KeyboardSelector<T> where T : ISelectable
+public class KeyboardSelector<T> where T : class, ISelectable
 {
     private readonly IReadOnlyList<T> _items;
     private readonly ScrollRect _scrollRect;
@@ -27,10 +27,21 @@ public class KeyboardSelector<T> where T : ISelectable
         }
     }
 
+    public void SelectByItem(T item)
+    {
+        for (int i = 0; i < _items.Count; i++)
+        {
+            if (_items[i] == item)
+            {
+                SelectIndex(i);
+                return;
+            }
+        }
+    }
+
     public void Tick()
     {
-        if (_items.Count == 0) 
-            return;
+        if (_items.Count == 0) return;
 
         if (Input.GetKeyDown(KeyCode.DownArrow))
         {
@@ -41,10 +52,13 @@ public class KeyboardSelector<T> where T : ISelectable
             SelectIndex(_currentIndex - 1);
         }
     }
-
+    
     private void SelectIndex(int newIndex)
     {
         if (newIndex < 0 || newIndex >= _items.Count) 
+            return;
+
+        if (newIndex == _currentIndex) 
             return;
 
         _items[_currentIndex].SetSelected(false);
@@ -65,23 +79,20 @@ public class KeyboardSelector<T> where T : ISelectable
         float contentHeight = contentRect.rect.height;
         float viewportHeight = viewportRect.rect.height;
 
-        
-        if (contentHeight <= viewportHeight) 
-            return;
+        if (contentHeight <= viewportHeight) return;
 
         float itemPositionY = Mathf.Abs(itemRect.anchoredPosition.y);
         float itemHeight = itemRect.rect.height;
 
-        
         float targetPosition = itemPositionY - (viewportHeight / 2) + (itemHeight / 2);
 
-        
         float maxScroll = contentHeight - viewportHeight;
         targetPosition = Mathf.Clamp(targetPosition, 0, maxScroll);
 
-        
         float normalizedPosition = 1f - (targetPosition / maxScroll);
 
         _scrollRect.verticalNormalizedPosition = normalizedPosition;
     }
+
+
 }

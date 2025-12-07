@@ -31,7 +31,21 @@ public class DynamicListController : MonoBehaviour
             RatingElementView view = Instantiate(_ratingElementViewPrefab, _elementsContainer);
             view.transform.localScale = Vector3.one;
             view.Init(data);
+            view.OnClicked += OnElementClicked;
             _elements.Add(view);
+        }
+    }
+
+    private void OnElementClicked(RatingElementView view)
+    {
+        _selector.SelectByItem(view);
+    }
+
+    private void OnDestroy()
+    {
+        foreach (var view in _elements)
+        {
+            view.OnClicked -= OnElementClicked;
         }
     }
 }
