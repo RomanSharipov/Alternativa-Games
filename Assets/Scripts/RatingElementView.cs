@@ -17,7 +17,7 @@ public class RatingElementView : MonoBehaviour, ISelectable
 
     public void SetSelected(bool isSelected)
     {
-        _selectionBorder.enabled = isSelected;
+        _selectionBorder.gameObject.SetActive(isSelected);
     }
 
     public void Init(RatingElementData data)
