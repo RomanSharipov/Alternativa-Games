@@ -14,4 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Egor
   _header: Egor
+  _description: "\u0420\u0435\u0439\u0442\u0438\u043D\u0433: 4102. \u041F\u043E\u0431\u0435\u0434:
+    298. \u041A\u043B\u0430\u043D: [STORM]"
   _icon: {fileID: 21300000, guid: a9d3dcc80c881c24d9e576ea9b97d153, type: 3}

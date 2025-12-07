@@ -14,4 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Anastasia
   _header: Anastasia
+  _description: "\u0420\u0435\u0439\u0442\u0438\u043D\u0433: 4567. \u041F\u043E\u0431\u0435\u0434:
+    367. \u0422\u043E\u043F-5 \u0440\u0435\u0439\u0442\u0438\u043D\u0433\u0430."
   _icon: {fileID: 21300000, guid: edf754541fcc97b4bbe546ea4e91b4f5, type: 3}

@@ -14,4 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Maxim
   _header: Maxim
+  _description: "\u0420\u0435\u0439\u0442\u0438\u043D\u0433: 4678. \u041F\u043E\u0431\u0435\u0434:
+    389. \u0420\u0435\u043A\u043E\u0440\u0434\u0441\u043C\u0435\u043D \u043F\u043E
+    \u0443\u0431\u0438\u0439\u0441\u0442\u0432\u0430\u043C."
   _icon: {fileID: 21300000, guid: 7fbed5abc4349fb4e84d593f055bf2be, type: 3}

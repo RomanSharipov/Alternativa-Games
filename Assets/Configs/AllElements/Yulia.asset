@@ -14,4 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Yulia
   _header: Yulia
+  _description: "\u0420\u0435\u0439\u0442\u0438\u043D\u0433: 4123. \u041F\u043E\u0431\u0435\u0434:
+    289. \u0411\u044B\u0441\u0442\u0440\u0435\u0439\u0448\u0438\u0439 \u0438\u0433\u0440\u043E\u043A
+    \u0441\u0435\u0437\u043E\u043D\u0430."
   _icon: {fileID: 21300000, guid: 144754a3cd0991740b0eb5cffb766fc5, type: 3}

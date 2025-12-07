@@ -14,4 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Daria
   _header: Daria
+  _description: "\u0420\u0435\u0439\u0442\u0438\u043D\u0433: 4234. \u041F\u043E\u0431\u0435\u0434:
+    301. \u041B\u0443\u0447\u0448\u0438\u0439 \u043D\u043E\u0432\u0438\u0447\u043E\u043A
+    2022."
   _icon: {fileID: 21300000, guid: 32bcf03ab7e19c043b20b540be008b33, type: 3}

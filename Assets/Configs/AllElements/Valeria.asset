@@ -14,4 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Valeria
   _header: Valeria
+  _description: "\u0420\u0435\u0439\u0442\u0438\u043D\u0433: 4456. \u041F\u043E\u0431\u0435\u0434:
+    345. \u0421\u043D\u0430\u0439\u043F\u0435\u0440 \u0441 2000 \u0443\u0431\u0438\u0439\u0441\u0442\u0432."
   _icon: {fileID: 21300000, guid: eb3fac4399d7c9744bded24c9ed4f87e, type: 3}

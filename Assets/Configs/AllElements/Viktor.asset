@@ -14,4 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Viktor
   _header: Viktor
+  _description: "\u0420\u0435\u0439\u0442\u0438\u043D\u0433: 2567. \u041F\u043E\u0431\u0435\u0434:
+    89. \u0421\u0442\u0440\u0430\u0442\u0435\u0433 \u043A\u043E\u043C\u0430\u043D\u0434\u044B."
   _icon: {fileID: 21300000, guid: 1de8c6889189cc948b527a0cb86a0774, type: 3}

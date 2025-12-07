@@ -14,4 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Denis
   _header: Denis
+  _description: "\u0420\u0435\u0439\u0442\u0438\u043D\u0433: 3678. \u041F\u043E\u0431\u0435\u0434:
+    201. \u0421\u043D\u0430\u0439\u043F\u0435\u0440 \u0441 \u0442\u043E\u0447\u043D\u043E\u0441\u0442\u044C\u044E
+    87%."
   _icon: {fileID: 21300000, guid: e5db0a750604c824fbbaf7754df84be9, type: 3}

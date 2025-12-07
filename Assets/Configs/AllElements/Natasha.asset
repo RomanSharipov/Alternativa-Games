@@ -14,4 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Natasha
   _header: Natasha
+  _description: "\u0420\u0435\u0439\u0442\u0438\u043D\u0433: 3234. \u041F\u043E\u0431\u0435\u0434:
+    156. \u0422\u0430\u043A\u0442\u0438\u043A \u043A\u043B\u0430\u043D\u0430 [FIRE]."
   _icon: {fileID: 21300000, guid: 5d6fb5a9a9fb1f64897f0b1c33345595, type: 3}

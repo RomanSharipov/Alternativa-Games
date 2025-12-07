@@ -14,4 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Anna
   _header: Anna
+  _description: "\u0420\u0435\u0439\u0442\u0438\u043D\u0433: 4456. \u041F\u043E\u0431\u0435\u0434:
+    334. \u041C\u0430\u0441\u0442\u0435\u0440 \u043E\u0431\u043E\u0440\u043E\u043D\u044B."
   _icon: {fileID: 21300000, guid: 115d8b99d15028e4aba5ac46b50eaf63, type: 3}

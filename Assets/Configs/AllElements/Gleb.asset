@@ -14,4 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Gleb
   _header: Gleb
+  _description: "\u0420\u0435\u0439\u0442\u0438\u043D\u0433: 2901. \u041F\u043E\u0431\u0435\u0434:
+    134. \u0421\u043F\u0435\u0446\u0438\u0430\u043B\u0438\u0441\u0442 \u043F\u043E
+    \u0442\u0435\u0445\u043D\u0438\u043A\u0435."
   _icon: {fileID: 21300000, guid: bf07194bfd131cc4da1e18c3c138504f, type: 3}

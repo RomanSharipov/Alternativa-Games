@@ -14,4 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Marina
   _header: Marina
+  _description: "\u0420\u0435\u0439\u0442\u0438\u043D\u0433: 4567. \u041F\u043E\u0431\u0435\u0434:
+    356. \u0422\u043E\u043F-3 \u0441\u0435\u0440\u0432\u0435\u0440\u0430."
   _icon: {fileID: 21300000, guid: db4eb6d205a83f040b3ada52b90eebc7, type: 3}

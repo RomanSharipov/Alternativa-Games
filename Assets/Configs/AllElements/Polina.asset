@@ -14,4 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Polina
   _header: Polina
+  _description: "\u0420\u0435\u0439\u0442\u0438\u043D\u0433: 4012. \u041F\u043E\u0431\u0435\u0434:
+    256. \u041A\u043B\u0430\u043D: [STAR]"
   _icon: {fileID: 21300000, guid: 37228f92e12a3c744af1c78054b01db0, type: 3}

@@ -14,4 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Oleg
   _header: Oleg
+  _description: "\u0420\u0435\u0439\u0442\u0438\u043D\u0433: 2567. \u041F\u043E\u0431\u0435\u0434:
+    78. \u041D\u043E\u0432\u0438\u0447\u043E\u043A \u043A\u043B\u0430\u043D\u0430."
   _icon: {fileID: 21300000, guid: e6d4a34d22e45cc48950c5388f69ffee, type: 3}

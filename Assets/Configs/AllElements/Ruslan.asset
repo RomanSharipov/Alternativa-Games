@@ -14,4 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Ruslan
   _header: Ruslan
+  _description: "\u0420\u0435\u0439\u0442\u0438\u043D\u0433: 3678. \u041F\u043E\u0431\u0435\u0434:
+    198. \u041A\u043B\u0430\u043D: [SHADOW]"
   _icon: {fileID: 21300000, guid: b6a5a1572a8af1248be4494b71742c6c, type: 3}

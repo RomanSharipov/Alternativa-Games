@@ -14,4 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Nadezhda
   _header: Nadezhda
+  _description: "\u0420\u0435\u0439\u0442\u0438\u043D\u0433: 4123. \u041F\u043E\u0431\u0435\u0434:
+    278. \u041C\u0430\u0441\u0442\u0435\u0440 \u043C\u0430\u043D\u0451\u0432\u0440\u043E\u0432."
   _icon: {fileID: 21300000, guid: 48c09bbd3aa61844db2c396e01edba51, type: 3}

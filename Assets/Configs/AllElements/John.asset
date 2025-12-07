@@ -14,4 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: John
   _header: John
+  _description: "\u0420\u0435\u0439\u0442\u0438\u043D\u0433: 4750. \u041F\u043E\u0431\u0435\u0434:
+    356. \u0427\u0435\u043C\u043F\u0438\u043E\u043D \u0442\u0443\u0440\u043D\u0438\u0440\u0430
+    2023."
   _icon: {fileID: 21300000, guid: 54dc8c77feebde24da0478242e179c53, type: 3}

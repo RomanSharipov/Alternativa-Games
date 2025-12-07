@@ -14,4 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Ksenia
   _header: Ksenia
+  _description: "\u0420\u0435\u0439\u0442\u0438\u043D\u0433: 4678. \u041F\u043E\u0431\u0435\u0434:
+    398. \u0427\u0435\u043C\u043F\u0438\u043E\u043D \u0441\u0435\u0437\u043E\u043D\u0430."
   _icon: {fileID: 21300000, guid: 7afc09f19cd1cb0409d8b99d5763712a, type: 3}

@@ -14,4 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Kristina
   _header: Kristina
+  _description: "\u0420\u0435\u0439\u0442\u0438\u043D\u0433: 4567. \u041F\u043E\u0431\u0435\u0434:
+    345. \u041F\u043E\u0431\u0435\u0434\u0438\u0442\u0435\u043B\u044C 3 \u0442\u0443\u0440\u043D\u0438\u0440\u043E\u0432."
   _icon: {fileID: 21300000, guid: 4cc9c69696039364bbae305387a75b05, type: 3}
