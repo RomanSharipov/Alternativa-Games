@@ -587,6 +587,7 @@ GameObject:
   - component: {fileID: 6097998698023023744}
   - component: {fileID: 3040913134146051920}
   - component: {fileID: 2243517339632252053}
+  - component: {fileID: 3594811316013674786}
   m_Layer: 5
   m_Name: RatingElementView
   m_TagString: Untagged
@@ -654,8 +655,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _targetRect: {fileID: 3958826272199557174}
+  _parentRect: {fileID: 0}
+  _layoutElement: {fileID: 3594811316013674786}
   _expandedHeight: 379.2
   _animationDuration: 0.3
+--- !u!114 &3594811316013674786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7162093601395241942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreLayout: 0
+  m_MinWidth: -1
+  m_MinHeight: 100
+  m_PreferredWidth: -1
+  m_PreferredHeight: 100
+  m_FlexibleWidth: -1
+  m_FlexibleHeight: 0
+  m_LayoutPriority: 1
 --- !u!1 &7983904586821389885
 GameObject:
   m_ObjectHideFlags: 0
