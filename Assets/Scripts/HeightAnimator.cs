@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,6 +10,9 @@ public class HeightAnimator : MonoBehaviour
     [SerializeField] private LayoutElement _layoutElement;
     [SerializeField] private float _expandedHeight = 150f;
     [SerializeField] private float _animationDuration = 0.3f;
+
+    [SerializeField] private TMP_Text _descriptionText;
+    [SerializeField] private float _padding = 20f;
 
     private float _collapsedHeight;
     private Coroutine _currentAnimation;
@@ -21,12 +25,18 @@ public class HeightAnimator : MonoBehaviour
 
     public void Expand()
     {
-        StartAnimation(_expandedHeight);
+        float expandedHeight = CalculateExpandedHeight();
+        StartAnimation(expandedHeight);
     }
 
     public void Collapse()
     {
         StartAnimation(_collapsedHeight);
+    }
+
+    private float CalculateExpandedHeight()
+    {
+        return _collapsedHeight + _descriptionText.preferredHeight + _padding;
     }
 
     private void StartAnimation(float targetHeight)
@@ -40,7 +50,7 @@ public class HeightAnimator : MonoBehaviour
 
     private IEnumerator AnimateHeight(float targetHeight)
     {
-        float startHeight = _targetRect.sizeDelta.y;
+        float startHeight = _layoutElement.preferredHeight;
         float elapsed = 0f;
 
         while (elapsed < _animationDuration)
@@ -48,16 +58,12 @@ public class HeightAnimator : MonoBehaviour
             elapsed += Time.deltaTime;
             float t = elapsed / _animationDuration;
 
-            float newHeight = Mathf.Lerp(startHeight, targetHeight, t);
+            _layoutElement.preferredHeight = Mathf.Lerp(startHeight, targetHeight, t);
 
-            _layoutElement.preferredHeight = newHeight;
-            
             yield return null;
         }
 
-        _targetRect.sizeDelta = new Vector2(_targetRect.sizeDelta.x, targetHeight);
-        
-
+        _layoutElement.preferredHeight = targetHeight;
         _currentAnimation = null;
     }
 

@@ -390,6 +390,7 @@ GameObject:
   - component: {fileID: 5204300835688860057}
   - component: {fileID: 9165115317958200593}
   - component: {fileID: 2880593713684555231}
+  - component: {fileID: 516843644798397670}
   m_Layer: 5
   m_Name: DiscriptionPlush
   m_TagString: Untagged
@@ -412,10 +413,10 @@ RectTransform:
   - {fileID: 2706004513055435316}
   m_Father: {fileID: 2420403737034282164}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -228}
-  m_SizeDelta: {x: 1524.99, y: 237.535}
+  m_AnchoredPosition: {x: 0, y: -41.909992}
+  m_SizeDelta: {x: 1524.99, y: -140.58002}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &9165115317958200593
 CanvasRenderer:
@@ -455,6 +456,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 17.4
+--- !u!114 &516843644798397670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4571977594809750777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31a19414c41e5ae4aae2af33fee712f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShowMaskGraphic: 1
 --- !u!1 &6277658978853000805
 GameObject:
   m_ObjectHideFlags: 0
@@ -655,10 +669,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _targetRect: {fileID: 3958826272199557174}
-  _parentRect: {fileID: 0}
   _layoutElement: {fileID: 3594811316013674786}
   _expandedHeight: 379.2
   _animationDuration: 0.3
+  _descriptionText: {fileID: 4181509007157882231}
+  _padding: 20
 --- !u!114 &3594811316013674786
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -765,6 +780,7 @@ GameObject:
   - component: {fileID: 2706004513055435316}
   - component: {fileID: 197964536471681365}
   - component: {fileID: 4181509007157882231}
+  - component: {fileID: 118189451911983521}
   m_Layer: 5
   m_Name: DescriptionText
   m_TagString: Untagged
@@ -889,6 +905,20 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &118189451911983521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8151054505025570269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalFit: 0
+  m_VerticalFit: 2
 --- !u!1 &8725555977606683865
 GameObject:
   m_ObjectHideFlags: 0
